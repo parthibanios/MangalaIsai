@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima-Nova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongDetailCell" rowHeight="71" id="KGk-i7-Jjw" customClass="SongDetailCell" customModule="MangalaIsai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Mv-FY-K1b" customClass="SimpleShadowedView" customModule="MangalaIsai" customModuleProvider="target">
+                        <rect key="frame" x="16" y="11" width="49" height="49"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="11B-rz-2NE">
+                        <rect key="frame" x="15" y="10" width="51" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="51" id="aDU-Lr-Hhe"/>
+                            <constraint firstAttribute="width" secondItem="11B-rz-2NE" secondAttribute="height" multiplier="1:1" id="lU9-R1-s5r"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uHA-r5-f5x">
+                        <rect key="frame" x="76" y="15.5" width="39.5" height="40.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy6-41-8E6">
+                                <rect key="frame" x="0.0" y="0.0" width="39.5" height="19"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="19"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xca-aN-wfb">
+                                <rect key="frame" x="0.0" y="24" width="39.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2JO-Lz-F3J">
+                        <rect key="frame" x="125.5" y="24.5" width="59" height="22"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfX-r0-V92">
+                                <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="0yu-WZ-LWu">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="22" id="Y58-k9-aWW">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="down1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQK-Yb-SEh">
+                                <rect key="frame" x="37" y="0.0" width="22" height="22"/>
+                                <state key="normal" image="fav1"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="PfX-r0-V92" firstAttribute="width" secondItem="JQK-Yb-SEh" secondAttribute="width" id="BT0-uF-ZbM"/>
+                            <constraint firstItem="PfX-r0-V92" firstAttribute="height" secondItem="JQK-Yb-SEh" secondAttribute="height" id="Wal-Vo-Pjb"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="11B-rz-2NE" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.16" id="6he-MX-3af"/>
+                    <constraint firstItem="0Mv-FY-K1b" firstAttribute="top" secondItem="11B-rz-2NE" secondAttribute="top" constant="1" id="Cin-ys-POP"/>
+                    <constraint firstItem="11B-rz-2NE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="F5O-s4-0ll">
+                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                    </constraint>
+                    <constraint firstItem="2JO-Lz-F3J" firstAttribute="leading" secondItem="uHA-r5-f5x" secondAttribute="trailing" constant="10" id="H17-lz-Hf3">
+                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                    </constraint>
+                    <constraint firstAttribute="bottom" secondItem="11B-rz-2NE" secondAttribute="bottom" constant="10" id="JKR-op-Gag">
+                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                    </constraint>
+                    <constraint firstItem="2JO-Lz-F3J" firstAttribute="centerY" secondItem="uHA-r5-f5x" secondAttribute="centerY" id="NMB-mu-NM4"/>
+                    <constraint firstItem="uHA-r5-f5x" firstAttribute="leading" secondItem="11B-rz-2NE" secondAttribute="trailing" constant="10" id="UMz-do-JPr">
+                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                    </constraint>
+                    <constraint firstItem="0Mv-FY-K1b" firstAttribute="leading" secondItem="11B-rz-2NE" secondAttribute="leading" constant="1" id="Ukz-8b-bKB"/>
+                    <constraint firstItem="uHA-r5-f5x" firstAttribute="centerY" secondItem="11B-rz-2NE" secondAttribute="centerY" id="aGo-Nl-aAX"/>
+                    <constraint firstItem="11B-rz-2NE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bAL-BU-1Am">
+                        <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                    </constraint>
+                    <constraint firstAttribute="trailing" secondItem="2JO-Lz-F3J" secondAttribute="trailing" constant="10" id="eYP-az-JZg">
+                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                    </constraint>
+                    <constraint firstItem="0Mv-FY-K1b" firstAttribute="bottom" secondItem="11B-rz-2NE" secondAttribute="bottom" constant="-1" id="llV-23-w7m"/>
+                    <constraint firstItem="0Mv-FY-K1b" firstAttribute="trailing" secondItem="11B-rz-2NE" secondAttribute="trailing" constant="-1" id="vHd-YO-l2r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="downlaodBtn" destination="PfX-r0-V92" id="Dh1-cM-gbG"/>
+                <outlet property="durationLbl" destination="Xca-aN-wfb" id="NZd-NT-C4p"/>
+                <outlet property="imageView" destination="11B-rz-2NE" id="HIi-eB-r4d"/>
+                <outlet property="imgView" destination="11B-rz-2NE" id="BN3-pu-HMx"/>
+                <outlet property="likeBtn" destination="JQK-Yb-SEh" id="0zz-Sm-Xad"/>
+                <outlet property="titleLbl" destination="wy6-41-8E6" id="uQ8-tx-5ah"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="118.19196428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Image" width="1920" height="2880"/>
+        <image name="down1" width="15" height="15"/>
+        <image name="fav1" width="15" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima-Nova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="Proxima-Nova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainAlbamCollectionViewCell" id="gTV-IL-0wX" customClass="MainAlbamCollectionViewCell" customModule="MangalaIsai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="183" height="227"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="183" height="227"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3W-1f-V44" customClass="SimpleShadowedView" customModule="MangalaIsai" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="173" height="217"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Hbw-Xe-z6F">
+                        <rect key="frame" x="5" y="5" width="173" height="217"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zqD-cE-oLE">
+                        <rect key="frame" x="10" y="197.5" width="163" height="19.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Dark Yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HK8-Q1-ilW">
+                                <rect key="frame" x="0.0" y="0.0" width="163" height="19.5"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="22"/>
+                                </variation>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVL-48-Vjg">
+                                <rect key="frame" x="0.0" y="0.0" width="163" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="kuk-Nt-Mdz">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="2"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="shelby lynee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efj-4v-Hha">
+                                <rect key="frame" x="0.0" y="0.0" width="163" height="0.0"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Hbw-Xe-z6F" secondAttribute="bottom" constant="5" id="A8x-tK-Se1">
+                    <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                </constraint>
+                <constraint firstItem="zqD-cE-oLE" firstAttribute="bottom" secondItem="Hbw-Xe-z6F" secondAttribute="bottom" constant="-5" id="Bkg-LY-r16"/>
+                <constraint firstAttribute="trailing" secondItem="Hbw-Xe-z6F" secondAttribute="trailing" constant="5" id="C5L-Ji-S4T"/>
+                <constraint firstItem="S3W-1f-V44" firstAttribute="trailing" secondItem="Hbw-Xe-z6F" secondAttribute="trailing" id="FKn-Mi-ejv"/>
+                <constraint firstItem="S3W-1f-V44" firstAttribute="bottom" secondItem="Hbw-Xe-z6F" secondAttribute="bottom" id="Ndf-X7-uaa"/>
+                <constraint firstItem="S3W-1f-V44" firstAttribute="leading" secondItem="Hbw-Xe-z6F" secondAttribute="leading" id="OMm-W7-HgT"/>
+                <constraint firstItem="zqD-cE-oLE" firstAttribute="leading" secondItem="Hbw-Xe-z6F" secondAttribute="leading" constant="5" id="kRI-Cf-7q7"/>
+                <constraint firstItem="S3W-1f-V44" firstAttribute="top" secondItem="Hbw-Xe-z6F" secondAttribute="top" id="kjL-oK-dmp"/>
+                <constraint firstItem="Hbw-Xe-z6F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="lOs-gm-CUC">
+                    <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                </constraint>
+                <constraint firstItem="zqD-cE-oLE" firstAttribute="trailing" secondItem="Hbw-Xe-z6F" secondAttribute="trailing" constant="-5" id="ljT-No-uR4"/>
+                <constraint firstItem="Hbw-Xe-z6F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="siy-UK-UxD">
+                    <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                </constraint>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="183" height="227"/>
+            <connections>
+                <outlet property="albumImageView" destination="Hbw-Xe-z6F" id="KKb-60-GJe"/>
+                <outlet property="albumName" destination="HK8-Q1-ilW" id="geW-gu-wVU"/>
+            </connections>
+            <point key="canvasLocation" x="234.05797101449278" y="162.38839285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image" width="1920" height="2880"/>
+    </resources>
+</document>
